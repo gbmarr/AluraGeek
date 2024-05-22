@@ -94,7 +94,7 @@ h2 {
     width: 230px;
     margin: .5em;
     background: linear-gradient(180deg, var(--baby-powder) 50%, var(--amber));
-    filter: drop-shadow(0px 0px 10px var(--amber));
+    filter: drop-shadow(0px 0px 10px var(--baby-powder));
     border-radius: 5px 0;
     padding: .5em;
 }
@@ -139,7 +139,7 @@ h2 {
 .form {
     width: 90%;
     background: linear-gradient(90deg, var(--amber) 60%, var(--baby-powder));
-    filter: drop-shadow(0px 0px 3px var(--amber));
+    filter: drop-shadow(0px 0px 3px var(--baby-powder));
     margin: auto;
     padding: 1em;
     border-radius: 5px 0;
@@ -244,6 +244,11 @@ input {
 /* ------------------------------ */
 
 /* ESTILOS DE LAS PSEUDOCLASES */
+.product__card:hover {
+    filter: drop-shadow(0px 0px 10px var(--amber));
+    transition: all .3s ease-in;
+}
+
 .product__button i:hover {
     cursor: pointer;
     transform: rotate(270deg);
