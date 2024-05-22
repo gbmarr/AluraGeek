@@ -1,0 +1,14 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Lenovo IdeaPad",
+            "image": "https://http2.mlstatic.com/D_NQ_NP_2X_971618-MLA73388357741_122023-F.webp"
+        },
+        {
+            "id": 2,
+            "title": "PC CPU Intel i5",
+            "image": "https://http2.mlstatic.com/D_NQ_NP_2X_902425-MLA40569365337_012020-F.webp"
+        }
+    ]
+}
