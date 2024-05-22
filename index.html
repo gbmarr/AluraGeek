@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&family=Ubuntu+Sans:ital,wdth,wght@0,80,200;1,80,200&display=swap" rel="stylesheet">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- favicon -->
+    <link rel="icon" href="images/alura-logo.ico">
+    <title>Alura Geek - Gabriel Marrero</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <i class='bx bx-hash'></i>
+            <h1>AluraGeek - Stock Products</h1>
+        </div>
+    </header>
+    <main class="container">
+        <section class="product__container">
+            <h2>Listado de productos</h2>
+            <div class="product__container__cards">
+                <div class="product__card">
+                    <img class="product__img" src="https://http2.mlstatic.com/D_NQ_NP_2X_971618-MLA73388357741_122023-F.webp" alt="">
+                    <h3 class="product__name">Lenovo 16"</h3>
+                    <article class="product__desc">Computadora portátil con procesador i9 y 2tb de RAM.</article>
+                    <button id="btnProductDelete" class="product__button">
+                        <i class="bx bx-x"></i>
+                    </button>
+                </div>
+                <div class="product__card">
+                    <img class="product__img" src="https://http2.mlstatic.com/D_NQ_NP_2X_971618-MLA73388357741_122023-F.webp" alt="">
+                    <h3 class="product__name">Lenovo 16"</h3>
+                    <article class="product__desc">Computadora portátil con procesador i9 y 2tb de RAM.</article>
+                    <button id="btnProductDelete" class="product__button">
+                        <i class="bx bx-x"></i>
+                    </button>
+                </div>
+                <div class="product__card">
+                    <img class="product__img" src="https://http2.mlstatic.com/D_NQ_NP_2X_971618-MLA73388357741_122023-F.webp" alt="">
+                    <h3 class="product__name">Lenovo 16"</h3>
+                    <article class="product__desc">Computadora portátil con procesador i9 y 2tb de RAM.</article>
+                    <button id="btnProductDelete" class="product__button">
+                        <i class="bx bx-x"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="form__container">
+            <h2>Agregar producto</h2>
+            <form class="form" action="">
+                <div>
+                    <label for="name">Nombre:</label>
+                    <input name="name" type="text" maxlength="20">
+                </div>
+                <div>
+                    <label for="desc">Descripción:</label>
+                    <input name="desc" type="text" maxlength="100">
+                </div>
+                <div>
+                    <label for="img">Imágen:</label>
+                    <input name="img" type="text" maxlength="250">
+                </div>
+                <button type="submit">Agregar</button>
+                <button id="clear">Limpiar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Design by <a href="#">gbmarr</a></p>
+    </footer>
+</body>
+</html>
