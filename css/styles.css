@@ -1,0 +1,272 @@
+/* PALETA DE COLORES DE LA PÁGINA */
+:root {
+    --dark-spring-green: #1c7c54ff;
+    --amber: #f5bb00ff;
+    --night: #0a0f0dff;
+    --baby-powder: #fffffcff;
+    --delete : rgb(255, 58, 91);
+}
+/* ------------------------------ */
+
+/* ESTILOS GENERALES DE LA PÁGINA */
+* {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    box-sizing: border-box;
+    font: bold 16px "Ubuntu Sans", sans-serif;
+    color: var(--night);
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background: linear-gradient(80deg, var(--night) 80%, var(--amber));
+}
+
+/* ------------------------------ */
+
+/* ESTILOS DEL HEADER */
+.header {
+    z-index: 1;
+    width: 100%;
+    background-color: var(--night);
+    padding: 1em;
+}
+
+.header div {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    color: var(--amber);
+}
+
+h1 {
+    font: 1.5em "Outfit", sans-serif;
+    color: var(--amber);
+}
+
+.header i {
+    font-size: 1.5em;
+    color: var(--amber);
+}
+/* ------------------------------ */
+
+/* ESTILOS DEL MAIN */
+.container {
+    margin: auto;
+    width: 100%;
+}
+
+h2 {
+    margin: .5em;
+    font: 1.2em "Outfit", sans-serif;
+    color: var(--amber);
+}
+
+/* ESTILOS DEL CARD CONTAINER */
+.product__container, .form__container {
+    width: 100%;
+    margin: auto;
+}
+
+.product__container {
+    min-width: 300px;
+    max-width: 900px;
+}
+
+.product__container__cards {
+    width: 90%;
+    padding: .5em;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: .2em;
+}
+
+/* Estilos de card */
+.product__card {
+    width: 230px;
+    margin: .5em;
+    background: linear-gradient(180deg, var(--baby-powder) 50%, var(--amber));
+    filter: drop-shadow(0px 0px 10px var(--amber));
+    border-radius: 5px 0;
+    padding: .5em;
+}
+
+.product__img {
+    width: 100%;
+    border-radius: 5px 0;
+}
+
+.product__name {
+    padding: .3em;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.product__desc {
+    text-align: end;
+    margin: auto;
+    width: 90%;
+}
+
+.product__button {
+    margin: .3em;
+    background-color: transparent;
+    border: none;
+}
+
+.product__button i {
+    font-size: 1.5em;
+    color: var(--delete);
+}
+
+/* ------------------------------ */
+
+/* ESTILOS DEL CARD CONTAINER */
+.form__container {
+    margin-bottom: 1.5em;
+    min-width: 280px;
+    max-width: 600px;
+}
+
+.form {
+    width: 90%;
+    background: linear-gradient(90deg, var(--amber) 60%, var(--baby-powder));
+    filter: drop-shadow(0px 0px 3px var(--amber));
+    margin: auto;
+    padding: 1em;
+    border-radius: 5px 0;
+}
+
+.form div {
+    width: 70%;
+    margin: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.form button {
+    background-color: var(--night);
+    color: var(--amber);
+    font-style: italic;
+    padding: .4em;
+    border-radius: 5px 0;
+    border: none;
+}
+
+button[id="clear"] {
+    background-color: var(--baby-powder);
+    color: var(--night);
+}
+
+label {
+    font-weight: bolder;
+}
+
+input {
+    width: 100%;
+    padding: .3em;
+    border-radius: 5px 0;
+    border: none;
+}
+
+/* ------------------------------ */
+
+/* ESTILOS DEL FOOTER */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: .5em;
+    background-color: var(--amber);
+}
+
+.footer__text {
+    margin: auto;
+}
+
+.footer__text a {
+    color: var(--baby-powder);
+    font-style: italic;
+}
+
+/* ------------------------------ */
+
+/* MEDIA QUERIES */
+@media (min-width: 400px) {
+    * {
+        font-size: 18px;
+    }
+    
+    .product__container__cards {
+        flex-flow: row wrap;
+    }
+}
+
+@media (min-width: 700px) {
+    * {
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 1250px) {
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .product__container, .form__container {
+        width: 70%;
+        height: 100vh;
+    }
+
+    .form__container {
+        width: 30%;
+    }
+
+    .form {
+        height: 60%;
+    }
+}
+
+/* ------------------------------ */
+
+/* ESTILOS DE LAS PSEUDOCLASES */
+.product__button i:hover {
+    cursor: pointer;
+    transform: rotate(270deg);
+    transition: all .3s ease-in;
+}
+
+.form button:hover {
+    margin: 0 .5em;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 3px var(--night));
+    transition: all .3s ease-in-out;
+}
+
+input:focus {
+    background-color: var(--night);
+    color: var(--amber);
+}
+
+.footer__text a:hover {
+    cursor: pointer;
+    color: var(--amber);
+    filter: drop-shadow(0px 0px 3px var(--night));
+    transition: all .3s ease-in;
+}
+
+/* ------------------------------ */
