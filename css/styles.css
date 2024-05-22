@@ -17,6 +17,7 @@
     font: bold 16px "Ubuntu Sans", sans-serif;
     color: var(--night);
     text-decoration: none;
+    list-style: none;
 }
 
 body {
