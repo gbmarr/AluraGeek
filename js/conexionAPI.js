@@ -1,5 +1,7 @@
+const APIurl = "http://localhost:3001/products";
+
 async function listProducts() {
-    const conexion = await fetch("http://localhost:3001/products");
+    const conexion = await fetch(APIurl);
 
     const conexionConvertida = await conexion.json();
 
@@ -7,9 +9,9 @@ async function listProducts() {
 }
 
 async function createProduct(title, image){
-    const conexion = await fetch("http://localhost:3001/products", {
+    const conexion = await fetch(APIurl, {
         method: "POST",
-        header:{"Content-type":"application/json"},
+        headers:{"Content-type":"application/json"},
         body: JSON.stringify({
             title:title,
             image:image
@@ -20,6 +22,12 @@ async function createProduct(title, image){
     return conexionConvertida;
 }
 
+function deleteProduct(id) {
+    return fetch(`${APIurl}/${id}`,{
+        method: "DELETE"
+    });
+}
+
 export const conexionAPI = {
-    listProducts, createProduct
+    listProducts, createProduct, deleteProduct
 }

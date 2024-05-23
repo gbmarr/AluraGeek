@@ -8,10 +8,16 @@ function createCard(id, name, image){
     product.innerHTML = `
             <img class="product__img" src="${image}" alt="" />
             <h3 class="product__name">${name}</h3>
-            <button id="${id}" name="btnProductDelete" class="product__button">
+            <button data-delete class="product__button">
                 <i class="bx bx-x"></i>
             </button>
     `;
+
+    const btnDelete = product.querySelector("[data-delete]");
+
+    btnDelete.addEventListener("click", ()=>{
+        conexionAPI.deleteProduct(id);
+    })
 
     return product;
 }
@@ -21,6 +27,7 @@ async function showProducts(){
 
     listAPI.forEach(product => {
         list.appendChild(createCard(product.id, product.title, product.image))
+        console.log(product.id);
     });
 }
 
