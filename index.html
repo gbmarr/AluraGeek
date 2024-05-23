@@ -31,18 +31,14 @@
         </section>
         <section class="form__container">
             <h2>Agregar producto</h2>
-            <form class="form" action="">
+            <form data-form class="form" action="">
                 <div>
                     <label for="name">Nombre:</label>
-                    <input name="name" type="text" maxlength="20">
-                </div>
-                <div>
-                    <label for="desc">Descripción:</label>
-                    <input name="desc" type="text" maxlength="100">
+                    <input data-title type="text" maxlength="20">
                 </div>
                 <div>
                     <label for="img">Imágen:</label>
-                    <input name="img" type="text" maxlength="250">
+                    <input data-img type="text" maxlength="250">
                 </div>
                 <button type="submit">Agregar</button>
                 <button id="clear">Limpiar</button>
@@ -53,5 +49,6 @@
         <p class="footer__text">Design by <a href="#">gbmarr</a></p>
     </footer>
     <script type="module" src="./js/showProducts.js"></script>
+    <script type="module" src="./js/createProduct.js"></script>
 </body>
 </html>

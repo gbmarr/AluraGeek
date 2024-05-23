@@ -1,14 +1,24 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "title": "Lenovo IdeaPad",
-            "image": "https://http2.mlstatic.com/D_NQ_NP_2X_971618-MLA73388357741_122023-F.webp"
-        },
-        {
-            "id": 2,
-            "title": "PC CPU Intel i5",
-            "image": "https://http2.mlstatic.com/D_NQ_NP_2X_902425-MLA40569365337_012020-F.webp"
-        }
-    ]
+  "products": [
+    {
+      "id": "1",
+      "title": "Lenovo IdeaPad",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_2X_971618-MLA73388357741_122023-F.webp"
+    },
+    {
+      "id": "2",
+      "title": "PC CPU Intel i5",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_2X_902425-MLA40569365337_012020-F.webp"
+    },
+    {
+      "id": "3",
+      "title": "Motorola E22",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_2X_952396-MLU74218675320_012024-F.webp"
+    },
+    {
+      "id": "3170",
+      "title": "ZTE Blade",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_2X_996739-MLU71522502542_092023-F.webp"
+    }
+  ]
 }
