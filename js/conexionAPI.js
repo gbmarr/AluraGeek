@@ -1,4 +1,4 @@
-const APIurl = "https://alura-geek-eta-black.vercel.app/db.json";
+const APIurl = "https://alura-geek-eta-black.vercel.app/db.json/products";
 
 async function listProducts() {
     const conexion = await fetch(APIurl);
@@ -17,7 +17,7 @@ async function createProduct(title, image){
             image:image
         })
     });
-    const conexionConvertida = conexion.json();
+    const conexionConvertida = await conexion.json();
 
     return conexionConvertida;
 }
