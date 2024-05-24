@@ -22,8 +22,8 @@ async function createProduct(title, image){
     return conexionConvertida;
 }
 
-function deleteProduct(id) {
-    return fetch(`${APIurl}/products/${id}`,{
+async function deleteProduct(id) {
+    return await fetch(`${APIurl}/products/${id}`,{
         method: "DELETE"
     });
 }
