@@ -1,4 +1,4 @@
-const APIurl = "http://localhost:3001/products";
+const APIurl = "https://alura-geek-eta-black.vercel.app/db.json/products";
 
 async function listProducts() {
     const conexion = await fetch(APIurl);
