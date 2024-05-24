@@ -17,7 +17,7 @@ async function createProduct(title, image){
             image:image
         })
     });
-    const conexionConvertida = conexion.json();
+    const conexionConvertida = await conexion.json();
 
     return conexionConvertida;
 }
