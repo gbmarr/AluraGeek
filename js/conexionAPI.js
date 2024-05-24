@@ -9,7 +9,7 @@ async function listProducts() {
 }
 
 async function createProduct(title, image){
-    const conexion = await fetch(APIurl, {
+    const conexion = await fetch(`${APIurl}/products`, {
         method: "POST",
         headers:{"Content-type":"application/json"},
         body: JSON.stringify({
@@ -23,7 +23,7 @@ async function createProduct(title, image){
 }
 
 function deleteProduct(id) {
-    return fetch(`${APIurl}/${id}`,{
+    return fetch(`${APIurl}/products/${id}`,{
         method: "DELETE"
     });
 }
