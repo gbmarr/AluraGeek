@@ -23,7 +23,7 @@ async function createProduct(title, image){
 }
 
 function deleteProduct(id) {
-    return fetch(`${APIurl}/products/${id}`,{
+    return fetch(`${APIurl}/${id}`,{
         method: "DELETE"
     });
 }
