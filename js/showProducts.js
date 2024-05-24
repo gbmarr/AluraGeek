@@ -17,6 +17,8 @@ function createCard(id, name, image){
 
     btnDelete.addEventListener("click", ()=>{
         conexionAPI.deleteProduct(id);
+
+        window.location.href = "../index.html";
     })
 
     return product;
