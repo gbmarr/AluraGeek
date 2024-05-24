@@ -26,7 +26,7 @@ async function showProducts(){
     const listAPI = await conexionAPI.listProducts();
 
     listAPI.forEach(product => {
-        list.appendChild(createCard(product.id, product.title, product.image))
+        list.appendChild(createCard(product.id, product.name, product.img))
         console.log(product.id);
     });
 }
